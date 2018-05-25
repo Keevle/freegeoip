@@ -20,7 +20,7 @@
     - -silent
     - -public=/opt/freegeoip/public
     - -quota-backend=memcache
-    - -quota-max=10000
+    - -quota-max=1000000
     - -quota-interval=1h
     - -redis={% for host in groups['freegeoip'] %}{{ hostvars[host]['private_ip'] }}:6379{% if not loop.last %},{% endif %}{% endfor %}
     - -redis-timeout=10s
