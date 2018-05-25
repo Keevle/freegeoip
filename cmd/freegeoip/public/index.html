@@ -88,38 +88,7 @@ angular.module("freegeoip", [function($locationProvider) {
 
 <div class="container-fluid page">
 
-	<div class="row">
-		<div class="col-sm-6 text-justify">
-			<h4>About</h4>
-			<p>
-			<a href="http://freegeoip.net">freegeoip.net</a>
-			provides a public HTTP API for software developers
-			to search the geolocation of IP addresses. It uses
-			a database of IP addresses that are associated to
-			cities along with other relevant information like
-			time zone, latitude and longitude.
-			</p>
 
-			<p>
-			You're allowed up to <big>10,000</big> queries per
-			hour by default. Once this limit is reached, all of
-			your requests will result in HTTP 403, forbidden,
-			until your quota is cleared.
-			</p>
-
-			<p>
-			The freegeoip web server is free and open source so
-			if the public service limit is a problem for you,
-			download it and run your own instance.
-			</p>
-
-			<br/>
-
-			<p class="text-center">
-				<a href="https://github.com/apilayer/freegeoip/releases/" class="btn btn-primary" target="_blank">Download</a>
-				<a href="https://github.com/apilayer/freegeoip" class="btn btn-primary" target="_blank">GitHub project</a>
-			</p>
-		</div>
 
 		<div class="col-sm-6" ng-controller="queryController">
 			<form class="form" role="form" ng-submit="submit(q)">
